@@ -87,7 +87,12 @@ class MyApp extends StatelessWidget {
       padding: const EdgeInsets.all(32.0),
       child: Text(
         '''
-Lake Oeschinen lies at the foot of the Blüemlisalp in the Bernese Alps. Situated 1,578 meters above sea level, it is one of the larger Alpine Lakes. A gondola ride from Kandersteg, followed by a half-hour walk through pastures and pine forest, leads you to the lake, which warms to 20 degrees Celsius in the summer. Activities enjoyed here include rowing, and riding the summer toboggan run.
+Lake Oeschinen lies at the foot of the Blüemlisalp in the Bernese Alps. 
+Situated 1,578 meters above sea level, it is one of the larger Alpine Lakes. 
+A gondola ride from Kandersteg, followed by a half-hour walk through pastures
+ and pine forest, leads you to the lake, which warms to 20 degrees Celsius in
+  the summer. Activities enjoyed here include rowing, and riding the summer 
+  toboggan run.
         ''',
         softWrap: true,
       ),
@@ -126,10 +131,12 @@ Lake Oeschinen lies at the foot of the Blüemlisalp in the Bernese Alps. Situate
     );
   }
 }
-    class FavoriteWidget extends StatefulWidget {
+
+class FavoriteWidget extends StatefulWidget {
   @override
   _FavoriteWidgetState createState() => _FavoriteWidgetState();
-}  
+}
+
 class _FavoriteWidgetState extends State<FavoriteWidget> {
   bool _isFavorited = true;
   int _favoriteCount = 41;
@@ -156,9 +163,7 @@ class _FavoriteWidgetState extends State<FavoriteWidget> {
         Container(
           padding: EdgeInsets.all(0.0),
           child: IconButton(
-            icon: (_isFavorited
-                ? Icon(Icons.star)
-                : Icon(Icons.star_border)),
+            icon: (_isFavorited ? Icon(Icons.star) : Icon(Icons.star_border)),
             color: Colors.red[500],
             onPressed: _toggleFavorite,
           ),

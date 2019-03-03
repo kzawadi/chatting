@@ -7,7 +7,7 @@ import 'package:flutter/material.dart';
 //import 'package:flutter/rendering.dart' show debugPaintSizeEnabled;
 
 void main() {
-  //debugPaintSizeEnabled = true;
+  ///debugShowCheckedModeBanner: false,
   runApp(MyApp());
 }
 
@@ -110,6 +110,7 @@ A gondola ride from Kandersteg, followed by a half-hour walk through pastures
     );
 
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter DSM',
       home: Scaffold(
         appBar: AppBar(
